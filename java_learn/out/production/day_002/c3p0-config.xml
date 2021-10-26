@@ -1,0 +1,31 @@
+<c3p0-config>
+    <default-config>
+        <property name="user">root</property>
+        <property name="password">root</property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql:///lhyyp?characterEncoding=utf8</property>
+        <!--  初始化连接数      -->
+        <property name="initialPoolSize">10</property>
+        <!-- 定义了在从池中剔除之前应该允许连接闲置的秒数-->
+<!--        <property name="maxIdleTime">30</property>-->
+        <!--  最大连接数 -->
+        <property name="maxPoolSize">10</property>
+        <!--  最小连接数 -->
+        <property name="minPoolSize">5</property>
+    </default-config>
+
+    <named-config name="myApp">
+        <property name="user">root</property>
+        <property name="password">root</property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql:///lhyyp?characterEncoding=utf8</property>
+        <!--  初始化连接数      -->
+        <property name="initialPoolSize">10</property>
+        <!-- 定义了在从池中剔除之前应该允许连接闲置的秒数-->
+        <!--        <property name="maxIdleTime">30</property>-->
+        <!--  最大连接数 -->
+        <property name="maxPoolSize">8</property>
+        <!--  最小连接数 -->
+        <property name="minPoolSize">5</property>
+    </named-config>
+</c3p0-config>
